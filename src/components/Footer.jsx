@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -11,13 +11,30 @@ const Footer = () => {
         <div className="mt-4 md:mt-0">
           <ul className="flex space-x-4">
             <li>
-              <a href="https://github.com/Salendra143" target='blank' className="hover:text-cyan-400">GitHub</a>
+              <a
+                href="https://github.com/Salendra143"
+                target="blank"
+                className="hover:text-cyan-400"
+              >
+                GitHub
+              </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/salendra-singh143/" target='blank' className="hover:text-cyan-400">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/in/salendra-singh143/"
+                target="blank"
+                className="hover:text-cyan-400"
+              >
+                LinkedIn
+              </a>
             </li>
             <li>
-              <a href="https://twitter.com/yourusername" className="hover:text-cyan-400">Twitter</a>
+              <a
+                href="https://twitter.com/yourusername"
+                className="hover:text-cyan-400"
+              >
+                Twitter
+              </a>
             </li>
           </ul>
         </div>
