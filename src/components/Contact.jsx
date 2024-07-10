@@ -47,7 +47,7 @@ const Contact = () => {
             placeholder="Message"
             id=""
           ></textarea>
-          <button className="p-3 bg-gray-950 border-2 italic border-cyan-400 text-[1.5rem] ">
+          <button className="p-3 hover:bg-cyan-400 bg-gray-950 border-2 italic border-cyan-400 text-[1.5rem] ">
             Send Message
           </button>
         </form>

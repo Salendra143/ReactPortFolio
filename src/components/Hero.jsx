@@ -8,8 +8,42 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import FrontendDEV from "../projectimg/FrontendDEV.pdf";
 
 import ai from "../assets/ai.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+
+  useGSAP(() => {
+    gsap.from('img', {
+      x: '-20%',
+      duration:3, // Animation duration in seconds
+       // Optional delay before the animation starts
+     
+    });
+    gsap.from('.hero p, button', {
+      x: '-100%',
+      opacity: 0,
+      duration: 2, 
+      delay: 1, 
+     stagger: 2,
+      yoyo: true,
+    });
+    gsap.from('#btn a', {
+      y: '50px',
+      opacity: 0,
+      duration: 1,
+      stagger: 0.8, // Adjust the stagger delay to control the delay between each element's animation start
+      ease: 'bounce.in',
+      repeat: 2,
+      yoyo: true,
+    });
+    
+   
+
+  }, []);
+
+
+
   return (
     <div className="relative w-full h-[100vh]">
       <Header />
@@ -19,7 +53,7 @@ const Hero = () => {
         alt="Iron Man"
       />
 
-      <div className="absolute z-10 flex w-full h-full flex-col text-[6vw] md:text-[2rem]  italic font-bold gap-5 justify-center items-center">
+      <div className="hero absolute z-10 flex w-full h-full flex-col text-[6vw] md:text-[2rem]  italic font-bold gap-5 justify-center items-center">
         <p>
           Welcome to My <span className="text-cyan-400">Portfolio</span>
         </p>
@@ -39,7 +73,7 @@ const Hero = () => {
             </button>
           </a>
         </div>
-        <div className=" flex gap-5">
+        <div id="btn" className=" flex gap-5">
           <a href="https://github.com/Salendra143" target="blank">
             <FaGithub className="hover:border-2 border-cyan-400 rounded-lg " />
           </a>

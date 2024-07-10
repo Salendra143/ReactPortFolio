@@ -1,22 +1,73 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdCloseCircle } from "react-icons/io";
 import { Link } from "react-scroll";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+
 
 const Header = () => {
   const [show, setShow] = useState(false);
 
-  const btnClicked = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(()=>{
+    gsap.to('.header', {
+      backgroundColor: 'rgba(0, 0, 0, 0.8)', 
+      marginTop: '-12px',
+      marginBottom: '-12',
+      duration: 0.2,
+      scrollTrigger: {
+          trigger: '.header',
+          start: 'top -15%',
+          scrub: 3,
+      }
+  });
+
+  gsap.to(' .nav,#name, #menu', {
+      color: 'white',
+      duration: 0.8,
+      scrollTrigger: {
+          trigger: '.header',
+          start: 'top -10%',
+          scrub: true,
+      }
+  });
+  
+  gsap.from('#name', {
+      x: '-200',
+    duration: 2,
+
+  });
+  gsap.from('.nav', {
+    x: '200',
+  duration: 2,
+  
+});
+
+  },[])  
+
+
+
+
+
+
+
+
+
+const btnClicked = () => {
     setShow(!show);
   };
 
   return (
     <div>
-      <div className="italic py-3 h-[90px] w-full shadow-sm shadow-cyan-400 px-5 md:px-20 mx-auto flex justify-between items-center absolute z-50">
-        <p className="text-[2.5rem] font-bold">
+      <div className=" header italic py-3 h-[90px] w-full  px-5 md:px-20 mx-auto flex justify-between items-center  fixed z-50">
+        <p id="name" className="text-[2.5rem] font-bold">
           <span className="text-[3rem] text-bold text-cyan-300">S</span>alendra
         </p>
-        <div className="hidden md:flex font-bold gap-5 text-[2vw]">
+        <div className="nav hidden md:flex font-bold gap-5 text-[2vw]">
           
           <Link
             to="project"
@@ -54,7 +105,7 @@ const Header = () => {
         </div>
         <CiMenuFries
           onClick={btnClicked}
-          className="text-[2rem] font-bold md:hidden block md:text-[2vw]"
+          id="menu" className="text-[2rem] font-bold md:hidden block md:text-[2vw] cursor-pointer"
         />
       </div>
 

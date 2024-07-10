@@ -9,7 +9,7 @@ import Marquee from './components/Marquee'
 
 const App = () => {
   return (
-  <div>
+  <div className='bg-black '>
   <Hero/> 
   <Marquee/>
   <Project/>

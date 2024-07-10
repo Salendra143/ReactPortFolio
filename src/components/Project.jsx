@@ -13,10 +13,10 @@ const Project = () => {
   return (
     <div id="project" className=" w-full bg-black  py-5 italic text-white">
       <div className="relative">
-        <p className=" text-[10vw] sm:text-[4rem] lg:text-[5rem] italic text-center font-bold relative z-10">
+        <p className=" text-[10vw] cursor-pointer hover:text-cyan-400 sm:text-[4rem] lg:text-[5rem] italic text-center font-bold relative z-10">
           Personal Projects
         </p>
-        <div className="absolute text-transparent w-full -top-1 -left-1 text-stroke z-0">
+        <div className="absolute  text-transparent w-full -top-1 -left-1 text-stroke z-0">
           <p className=" text-[10vw] sm:text-[4rem] lg:text-[5rem] italic text-center font-bold">
             Personal Projects
           </p>
