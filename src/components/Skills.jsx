@@ -4,7 +4,7 @@ import angular from "../image/angular.png";
 import css from "../image/css.svg";
 import c from "../image/c.jfif";
 import ex from "../image/ex.webp";
-import gsap from "../image/gsap.png";
+import gsapimg from "../image/gsap.png";
 import java from "../image/java.png";
 import js from "../image/js.png";
 import mongodb from "../image/mongodb.png";
@@ -15,17 +15,36 @@ import SQL from "../image/SQL.png";
 import tailwind from "../image/tailwind.png";
 import three from "../image/three.png";
 import vue from "../image/vue.jpg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Skills = () => {
+
+  useGSAP(()=>{
+    gsap.from('.skill > P',{
+        opacity: 0,
+        z: '-100',
+        duration: 0.8,
+        stagger: 1,
+        scrollTrigger:{
+          trigger: '.skill',
+          scroller: 'body',
+          start: 'top 70%',
+          end: 'bottom 100%',
+          scrub: true,
+      }
+      })
+  },[])
+
+
   return (
-    <div id="skills" className="w-full bg-black px-5 sm:px-20 mx-auto">
-      <p className="text-[5vw] italic text-center text-white">
-        {" "}
+    <div  className="skill w-full bg-black px-5 sm:px-20 mx-auto">
+      <p className="text-[5vw] italic text-center hover:text-cyan-400 cursor-pointer text-white font-bold text-stroke">
         My Tech Skills
       </p>
 
       <div className="w-full ">
-        <div className=" flex justify-center ">
+        <div className="skill flex justify-center ">
           <p className="text-white italic lg:text-[1.5rem]">
             I'm skilled in the MERN stack, which includes MongoDB, Express.js,
             React.js, and Node.js. I can design and manage databases with
@@ -79,7 +98,7 @@ const Skills = () => {
             <div className="w-[200px] h-[200px] rounded-lg">
               <img
                 className="w-full h-full  object-cover rounded-lg"
-                src={gsap}
+                src={gsapimg}
                 alt=""
               />
             </div>

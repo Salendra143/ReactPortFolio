@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   return (
     <div id="contact" className="w-full  bg-black text-white pb-10">
-      <p className="text-[5vw] italic text-center pt-5">Get in touch</p>
+      <p className="text-[5vw] italic text-center font-bold hover:text-cyan-400 text-stroke pt-5">Get in touch</p>
       <div className="w-full lg:w-3/4 mx-auto   sm:flex justify-between ">
         <div className="flex gap-5 flex-col   pt-5 px-8  sm:w-2/4 ">
           <div className="bg-gray-950 flex italic p-3  border-2 border-cyan-400 rounded-lg justify-center items-center flex-col">

@@ -47,13 +47,13 @@ const Project = () => {
 
       <div className="images flex justify-evenly gap-5 px-5 sm:px-20 mx-auto  flex-wrap ">
 
-        <div className="w-[200px] h-[200px] translate-z-6 transform skew-y-6  cursor-pointer relative md:w-[300px] md:h-[300px] rounded-2xl">
+        <div className="w-[200px] h-[200px]   cursor-pointer relative md:w-[300px] md:h-[300px] rounded-2xl">
           <img
-            className="w-full h-full translate-z-6 transform skew-y-6 object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl"
             src={youtube}
             alt=""
           />
-          <div className="absolute hover:translate-z-6 hover:transform hover:skew-y-6 inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8 ">
+          <div className="absolute  inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8 ">
             <p className="text-xs md:text-lg">
               Here is my Video Streaming clone App using React. My app includes functionalities like auto suggestion search like youTube and live chat
               and many more.
@@ -78,7 +78,7 @@ const Project = () => {
             src={foodapp}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg">I am developing a food-ordering App using react. My app includes
             functionalities such as search, add to cart and rendering a live
             data of swiggy api, and more. </p>
@@ -102,7 +102,7 @@ const Project = () => {
             src={netflix}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8 ">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8 ">
           <p className="text-xs md:text-lg">Here is my Netflix clone App using React. My app includes firebase
             authantication where user can sign up and sign out. and to rendering
             data i use TMDB movies API.and more</p>
@@ -121,7 +121,7 @@ const Project = () => {
             src={razorpay}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg">Here is my Razorpay UI/UX Cloning.</p>
           <p className="text-xs md:text-lg">Technologies: HTML,Tailwind</p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center" href="https://razorpay-clone123.netlify.app/" target="_blank">
@@ -135,7 +135,7 @@ const Project = () => {
             src={ecomzy}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg">Ecomzy App just trying to learn add to cart and remove item by
             specific ID functionalities using React App</p>
             <p className="text-xs md:text-lg">Technologies: React-Vite Tailwind and Redux/Toolkit</p>
@@ -150,7 +150,7 @@ const Project = () => {
             src={myntra}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg">Here is my Myntra UI/UX Cloning.</p>
             <p className="text-xs md:text-lg">Technologies: HTML, CSS</p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center"
@@ -167,7 +167,7 @@ const Project = () => {
             src={courses}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg">It is a react application for learing a some functionalities.</p> 
           <p className="text-xs md:text-lg">Technologies: React-Vite Tailwind</p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center" href="https://top-courses143.netlify.app/" target="_blank">
@@ -181,7 +181,7 @@ const Project = () => {
             src={discord}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg"> Here is my Discord UI/UX Cloning</p>
           <p className="text-xs md:text-lg">Technologies: HTML,CSS</p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center" href="https://discord-talk.netlify.app/" target="_blank">
@@ -195,7 +195,7 @@ const Project = () => {
             src={tours}
             alt=""
           />
-          <div className="w-full h-full absolute inset-0 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
+          <div className="w-full h-full absolute inset-0 hover:translate-z-6 hover:transform hover:skew-y-6 bg-cyan-400 opacity-0 hover:opacity-100 transition-opacity duration-1000 font-bold text-black ease-in-out rounded-2xl flex sm:justify-center sm:items-center sm:text-center flex-col p-2  md:p-8">
           <p className="text-xs md:text-lg">It is a react application for learing a some functionalities.</p>
           <p className="text-xs md:text-lg">Technologies: React-Vite Tailwind</p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center" href="https://booking-tour143.netlify.app/" target="_blank">

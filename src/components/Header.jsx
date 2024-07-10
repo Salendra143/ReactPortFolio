@@ -110,7 +110,7 @@ const btnClicked = () => {
       </div>
 
       {show && (
-        <div className="flex flex-col z-50 justify-center items-center bg-black opacity-95 absolute top-0 right-0 w-full md:w-[50%] h-[100vh] gap-5 text-[2vw] text-white">
+        <div className="flex flex-col z-50 justify-center items-center bg-black opacity-95 fixed top-0 right-0 w-full md:w-[50%] h-[100vh] gap-5 text-[2vw] text-white">
           <IoMdCloseCircle
             onClick={btnClicked}
             className="absolute top-8 right-5 cursor-pointer text-[2rem]"
@@ -119,7 +119,6 @@ const btnClicked = () => {
             to="about"
             smooth={true}
             duration={700}
-            onClick={btnClicked}
             className="text-[2rem] italic hover:text-cyan-400 hover:transition duration-700 ease-in-out cursor-pointer"
           >
             About
