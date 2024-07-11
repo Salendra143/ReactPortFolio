@@ -38,7 +38,7 @@ const Skills = () => {
 
 
   return (
-    <div  className="skill w-full bg-black px-5 sm:px-20 mx-auto">
+    <div id="skills"  className="skill w-full bg-black px-5 sm:px-20 mx-auto">
       <p className="text-[5vw] italic text-center hover:text-cyan-400 cursor-pointer text-white font-bold text-stroke">
         My Tech Skills
       </p>
