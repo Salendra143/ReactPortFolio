@@ -16,8 +16,7 @@ const Hero = () => {
   useGSAP(() => {
     gsap.from('img', {
       x: '-20%',
-      duration:3, // Animation duration in seconds
-       // Optional delay before the animation starts
+      duration:3, 
      
     });
     gsap.from('.hero p, button', {

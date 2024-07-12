@@ -62,7 +62,7 @@ const Project = () => {
               Technologies: React-Vite, YouTube API Tailwind CSS, and Redux/Toolkit
             </p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center" 
-              href="https://gregarious-khapse-5445d0.netlify.app/"
+              href="https://my-youtube143.netlify.app/"
               target="_blank"
               
             >
