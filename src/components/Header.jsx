@@ -4,60 +4,47 @@ import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdCloseCircle } from "react-icons/io";
 import { Link } from "react-scroll";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Header = () => {
   const [show, setShow] = useState(false);
 
   gsap.registerPlugin(ScrollTrigger);
 
-  useGSAP(()=>{
-    gsap.to('.header', {
-      backgroundColor: 'rgba(0, 0, 0, 0.8)', 
-      marginTop: '-12px',
-      marginBottom: '-12',
+  useGSAP(() => {
+    gsap.to(".header", {
+      backgroundColor: "rgba(0, 0, 0, 0.8)",
+      marginTop: "-12px",
+      marginBottom: "-12",
       duration: 0.2,
       scrollTrigger: {
-          trigger: '.header',
-          start: 'top -15%',
-          scrub: 3,
-      }
-  });
+        trigger: ".header",
+        start: "top -15%",
+        scrub: 3,
+      },
+    });
 
-  gsap.to(' .nav,#name, #menu', {
-      color: 'white',
+    gsap.to(" .nav,#name, #menu", {
+      color: "white",
       duration: 0.8,
       scrollTrigger: {
-          trigger: '.header',
-          start: 'top -10%',
-          scrub: true,
-      }
-  });
-  
-  gsap.from('#name', {
-      x: '-200',
-    duration: 2,
+        trigger: ".header",
+        start: "top -10%",
+        scrub: true,
+      },
+    });
 
-  });
-  gsap.from('.nav', {
-    x: '200',
-  duration: 2,
-  
-});
+    gsap.from("#name", {
+      x: "-200",
+      duration: 2,
+    });
+    gsap.from(".nav", {
+      x: "200",
+      duration: 2,
+    });
+  }, []);
 
-  },[])  
-
-
-
-
-
-
-
-
-
-const btnClicked = () => {
+  const btnClicked = () => {
     setShow(!show);
   };
 
@@ -68,7 +55,6 @@ const btnClicked = () => {
           <span className="text-[3rem] text-bold text-cyan-300">S</span>alendra
         </p>
         <div className="nav hidden md:flex font-bold gap-5 text-[2vw]">
-          
           <Link
             to="project"
             smooth={true}
@@ -101,11 +87,11 @@ const btnClicked = () => {
           >
             About
           </Link>
-
         </div>
         <CiMenuFries
           onClick={btnClicked}
-          id="menu" className="text-[2rem] font-bold md:hidden block md:text-[2vw] cursor-pointer"
+          id="menu"
+          className="text-[2rem] font-bold md:hidden block md:text-[2vw] cursor-pointer"
         />
       </div>
 
@@ -152,6 +138,8 @@ const btnClicked = () => {
           </Link>
         </div>
       )}
+
+     
     </div>
   );
 };
