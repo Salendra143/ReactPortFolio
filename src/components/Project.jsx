@@ -87,7 +87,7 @@ const Project = () => {
               Technologies: React-Vite Tailwind and Redux/Toolkit
             </p>
             < a className="mt-4 text-xs md:text-sm hover:text-red-500 text-center"
-              href="https://delicious-food-143.netlify.app/"
+              href="https://foodies143.netlify.app/"
               target="_blank"
              
             >
